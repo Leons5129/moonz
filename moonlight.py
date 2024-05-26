@@ -47,7 +47,7 @@ codecs.decode("021efd40","hex_codec"),#cookie port 7784
 codecs.decode("021efd40","hex_codec"),#cookie port 1111 
 codecs.decode("081e7eda","hex_codec")#cookie port 1111 tambem
 ]
-os.system('cls')
+os.system('clear')
 print(Fore.LIGHTMAGENTA_EX + attack)
 
 print(Fore.LIGHTMAGENTA_EX+"ATTACK STATUS: ")
